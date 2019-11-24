@@ -1,0 +1,188 @@
+ <!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Displaying Commodities...</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        #owl-demo .item {
+            
+            padding: 1px ;
+            margin: 10px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        .customNavigation {
+            text-align: center;
+        }
+
+        .card {
+          height:380px
+        }
+        .customNavigation a {
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        .owl-theme .owl-controls .owl-page span,
+        .owl-theme .owl-controls.clickable .owl-page:hover span {
+            
+            display: none;
+        }
+        
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            var owl = $("#owl-demo");
+
+            owl.owlCarousel({
+                items: 5, //10 items above 1000px browser width
+                itemsDesktop: [1000, 5], //5 items between 1000px and 901px
+                itemsDesktopSmall: [900, 3], // betweem 900px and 601px
+                itemsTablet: [600, 2], //2 items between 600 and 0
+                itemsMobile: false // itemsMobile disabled - inherit from itemsTablet option
+            });
+
+            // Custom Navigation Events
+            $(".next").click(function () {
+                owl.trigger('owl.next');
+            })
+            $(".prev").click(function () {
+                owl.trigger('owl.prev');
+            })
+           
+        })
+
+    </script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+          <a class="navbar-brand" href="homepage.html">Shop!</a>
+    
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="showcommodities.html">See All Items!</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    
+      </div> 
+    <div class="container-fluid mt-2 mb-2">
+
+        <h3 class="">
+            Checkout All Items Here...
+        </h3>
+
+    </div>
+    <div id="owl-demo" class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="card shadow" >
+                <img class="card-img-top" src="assets/item.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Item One!</h4>
+                  <p class="card-text">Some example text some example text about Commodity/Item.</p>
+                  <a href="showitem.html" class="btn btn-warning">See Details...</a>
+                </div>
+              </div>
+        </div>
+        <div class="item">
+            <div class="card shadow" >
+                <img class="card-img-top" src="assets/item.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Item Two!</h4>
+                  <p class="card-text">Some example text some example text about Commodity/Item.</p>
+                  <a href="showitem.html" class="btn btn-warning">See Details...</a>
+                </div>
+              </div>
+        </div>
+        <div class="item">
+            <div class="card shadow" >
+                <img class="card-img-top" src="assets/item.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Item Three!</h4>
+                  <p class="card-text">Some example text some example text about Commodity/Item.</p>
+                  <a href="showitem.html" class="btn btn-warning">See Details...</a>
+                </div>
+              </div>
+        </div>
+        <div class="item">
+            <div class="card shadow" >
+                <img class="card-img-top" src="assets/item.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Item Four!</h4>
+                  <p class="card-text">Some example text some example text about Commodity/Item.</p>
+                  <a href="showitem.html" class="btn btn-warning">See Details...</a>
+                </div>
+              </div>
+        </div>
+        <div class="item">
+            <div class="card shadow" >
+                <img class="card-img-top" src="assets/item.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Item Five!</h4>
+                  <p class="card-text">Some example text some example text about Commodity/Item.</p>
+                  <a href="showitem.html" class="btn btn-warning">See Details...</a>
+                </div>
+              </div>
+        </div>
+        <div class="item">
+            <div class="card shadow" >
+                <img class="card-img-top" src="assets/item.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Item Six!</h4>
+                  <p class="card-text">Some example text some example text about Commodity/Item.</p>
+                  <a href="showitem.html" class="btn btn-warning">See Details...</a>
+                </div>
+              </div>
+        </div>
+        <div class="item shadow" >
+            <div class="card" >
+                <img class="card-img-top" src="assets/item.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Item Seven!</h4>
+                  <p class="card-text">Some example text some example text about Commodity/Item.</p>
+                  <a href="showitem.html" class="btn btn-warning">See Details...</a>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="customNavigation">
+        <a type="button" class="btn prev rounded-circle">&laquo;</a>
+        <a type="button" class="btn next rounded-circle">&raquo;</a>
+        
+    </div>
+</body>
+
+</html>
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<style>
+		.description {
+			height: 300px;
+			overflow-x: auto;
+			border: 1px solid rgb(235, 228, 228);
+			border-radius: 5px;
+			padding: 5px;
+		}
+
+		.col-md-5 {
+			height: 425px;
+			border: 1px solid rgb(235, 228, 228);
+			border-radius: 5px;
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+			<a class="navbar-brand" href="homepage.html">Shop!</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">About Us!</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact Us!</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="showcommodities.html">See All Items!</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+	</div>
+
+	<div class="container-fluid pt-3">
+		<div class="row">
+			<div class="col-md-5 ">
+				<img class="w-100 h-100" src="assets/item.png" alt="item_image">
+			</div>
+			<div class="col-md-7">
+				<h3>Item Information Here...</h3>
+				<p class="mb-3"><span class="text-danger small">Price : </span><span class="text-success">500 $</span>
+				</p>
+				<h3>Description</h3>
+				<p class="description mb-2">
+					Some text that describe the item ... <br> what the Item Specifications and other else
+				</p>
+				<a type="button" href="cart.html" class="btn btn-danger">Buy Now</a>
+				<a type="button" href="cart.html" class="btn btn-success ml-2">Add to Cart</a>
+			</div>
+		</div>
+
+
+	</div>
+
+</body>
+
+</html>

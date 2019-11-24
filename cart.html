@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping Cart</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            <style>
+                .col-md-4 {
+                    height: 250px
+                }
+            </style>
+    </head>
+    <body>
+            <div class="container-fluid">
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                        <a class="navbar-brand" href="homepage.html">Shop!</a>
+            
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us!</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us!</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="showcommodities.html">See All Items!</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+            
+                </div>
+
+                <div class="container-fluid pt-3">
+                        <div class="row">
+                            <div class="col-12 ">
+                               <h3 class="text-dark">Shopping Cart</h3>
+                            </div>
+                            <div class="col-md-8 ">
+                                <div class="row border m-1 p-2 rounded   small" >
+                                    <div class="col-sm-3 text-center"><img class="h-100 w-100" src="assets/item.png"></div>
+                                    <div class="col-sm-9 "> 
+                                        <div class="clearfix">
+                                            <h6 class="text-primary float-left ">Item added To Cart</h6>
+                                            <h6 class="text-success float-right ">500 $</h6>
+
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="float-left">
+                                                    <label for="qty">Quantity</label>
+                                        
+                                                    <select id="qty">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                    </select>
+                                            </div>
+                                            <div class="float-right"><button class="btn btn-danger btn-sm">Delete</button></div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                    <div class="card h-100">
+                                            <div class="card-header text-success"><i class="fa fa-check mr-2"></i>Your order is eligible for free dilivery...</div>
+                                            <div class="card-body">
+                                                <h3>Sub Total (1 Item) : <span>$ 500</span></h3>
+
+                                                <a type="button" href="checkout.html" class="btn btn-block btn-warning mt-4">Proceed to CheckOut</a>
+                                            </div>
+                                            <div class="card-footer text-danger"><i class="fas fa-info-circle mr-2"></i> terms and condition of the company</div>
+                                          </div>
+                            </div>
+                            
+                        </div>
+                
+                
+                    </div>
+                
+    </body>
+</html>
